@@ -8,7 +8,7 @@ import { Client } from '../interfaces/client';
 })
 export class ClienteService {
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/clientes/';
+    'http://localhost:8000/Database/Database/clientes/';
   private formato = '?format=json';
   public clientesObtenidos : Client[] = [];
 

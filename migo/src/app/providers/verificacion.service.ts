@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class VerificacionService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/verificacionesconductorcampana/';
+    'http://localhost:8000/Database/Database/verificacionesconductorcampana/';
   private formato = '?format=json';
   private verificacion!: Verificacion;
   public verificacionesObtenidas: Verificacion[] = [];

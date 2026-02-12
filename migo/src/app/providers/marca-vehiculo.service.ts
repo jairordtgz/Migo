@@ -9,7 +9,7 @@ import { MarcaVehiculo } from '../interfaces/marca-vehiculo';
 })
 export class MarcaVehiculoService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/marcasvehiculos/';
+  private baseURL = 'http://localhost:8000/Database/Database/marcasvehiculos/';
   private formato = '?format=json'
 
   constructor(

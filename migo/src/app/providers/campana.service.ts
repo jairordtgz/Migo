@@ -10,7 +10,7 @@ import { FormularioAplicacion } from '../interfaces/formulario-aplicacion';
 })
 export class CampanaService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/campaniaspublicitarias/';
+  private baseURL = 'http://localhost:8000/Database/Database/campaniaspublicitarias/';
   private formato = '?format=json'
   private campana : any;
   public campanasObtenidas: Campana[] = [];

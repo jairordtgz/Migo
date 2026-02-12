@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class AdsService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/publicidades/';
+    'http://localhost:8000/Database/Database/publicidades/';
   private formato = '?format=json';
   public publicidadesObtenidas : Publicidad[] = [];
 

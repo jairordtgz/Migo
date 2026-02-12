@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class HttpserviceService {
 
   //Methods
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/send_email/';
+  private baseURL = 'http://localhost:8000/Database/send_email/';
   // "testing123"
   // "migoadstesting_@outlook.com"
   constructor(

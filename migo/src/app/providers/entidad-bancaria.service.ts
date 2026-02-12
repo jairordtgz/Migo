@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EntidadBancariaService {
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/entidadesbancarias/';
+    'http://localhost:8000/Database/Database/entidadesbancarias/';
   private formato = '?format=json';
   public entidadesObtenidas: EntidadBancaria[] = [];
 

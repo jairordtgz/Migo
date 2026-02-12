@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class SectorService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/sectores/';
+  private baseURL = 'http://localhost:8000/Database/Database/sectores/';
   private formato = '?format=json'
   private sector !: Sector;
   public sectoresObtenidos: Sector[] = [];

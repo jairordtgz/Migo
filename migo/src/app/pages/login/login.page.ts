@@ -85,10 +85,11 @@ export class LoginPage implements OnInit {
 
     busquedaEmail?.estado===0?this.usuarioDesactivado=true:this.usuarioDesactivado=false;
     busquedaEmail?.estado===3?this.usuarioEliminado=true:this.usuarioEliminado=false;
-
+    console.log('usuarioDesactivado: ', usuarios);
     //transformar con SHA256
     inputPassword = this.encriptarSHA256(inputPassword);
-
+    console.log('inputPassword encriptado: ', inputPassword);
+    console.log('busquedaEmail.contrasena: ', busquedaEmail);
     // const clientBusqueda = this.clients.find(({ email }) => email === inputEmail);
     if (busquedaEmail && (busquedaEmail.contrasena === inputPassword) && busquedaEmail.estado===1) {
       this.userService.ingresarUsuario(busquedaEmail);

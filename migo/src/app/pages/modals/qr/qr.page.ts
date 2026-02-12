@@ -18,7 +18,7 @@ import { ModeloVehiculosService } from 'src/app/providers/modelo-vehiculos.servi
 import { MarcaVehiculoService } from 'src/app/providers/marca-vehiculo.service';
 import { FormularioAplicacion } from 'src/app/interfaces/formulario-aplicacion';
 
-(<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
+(<any>pdfMake).vfs = pdfMake.vfs;
 
 @Component({
   selector: 'app-qr',
@@ -48,10 +48,10 @@ export class QrPage implements OnInit {
   talleresCampana: TallerBrandeo[] = [];
 
   /* ruta para peticiones a las imagenes de vehiculos del server */
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   /* Propiedades del QR */
-  imageSrc = 'https://migoadvs.pythonanywhere.com/vehiculos/migoQR.png';
+  imageSrc = 'http://localhost:8000/vehiculos/migoQR.png';
   imageHeight = 50;
   imageWidth = 150;
 
@@ -215,7 +215,7 @@ export class QrPage implements OnInit {
       );
 
       if (ingresoActual) {
-        const rutaBase = 'https://migoadvs.pythonanywhere.com/documentos/';
+        const rutaBase = 'http://localhost:8000/documentos/';
         const rutaDocumento =
           ingresoActual!.id +
           '_' +

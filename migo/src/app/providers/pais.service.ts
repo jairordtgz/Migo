@@ -9,7 +9,7 @@ import { Pais } from '../interfaces/pais';
 export class PaisService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/paises/';
+    'http://localhost:8000/Database/Database/paises/';
   private formato = '?format=json';
   public paisesObtenidos : Pais[] = [];
 

@@ -34,7 +34,7 @@ export class VehiculosModalPage implements OnInit {
   // hayVehiculos = false;
   loading = true;
 
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   component = AgregarVehiculoPage;
 

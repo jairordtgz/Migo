@@ -10,7 +10,7 @@ import { CampanaService } from './campana.service';
 })
 export class EmpresaService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/empresas/';
+  private baseURL = 'http://localhost:8000/Database/Database/empresas/';
   private formato = '?format=json'
   // private empresa!: Empresa;
   public empresasObtenidas: Empresa[] = [];

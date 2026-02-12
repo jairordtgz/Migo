@@ -9,11 +9,11 @@ import { Observable } from 'rxjs';
 export class EmpresaImagesService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/empresaimages/';
+    'http://localhost:8000/Database/Database/empresaimages/';
   private formato = '?format=json';
   public empresaImagesObtenidas : EmpresaImages[] = [];
-  private rutaLogos = 'https://migoadvs.pythonanywhere.com/logos/';
-  private rutaBanners = 'https://migoadvs.pythonanywhere.com/banners/';
+  private rutaLogos = 'http://localhost:8000/logos/';
+  private rutaBanners = 'http://localhost:8000/banners/';
 
   constructor(
     private http: HttpClient,

@@ -145,7 +145,7 @@ export class RegistroPage implements OnInit {
             fecha_creacion: new Date(),
             fecha_modificacion: new Date(),
             estado: 1,
-            rol_usuario: 5, //chofer,
+            rol_usuario: 5, //chofer, pero no, es cliente
             token_notificacion : "eujClc4dQKWglcbqqy_pbj:APA91bEEB78NUOs1ddq23aJ4baILdMDd1CUYiwndetmJhWtUpb2rvMkz048BYqhs2uepxyvMW2mOhoY-W6hrnnblX2hq4d1UU00HNj4u2LGDbiW2yVQU6Iy2B_q-Lv1RfU7sXEXpHNm",
             id_pais: Number(this.paisInput),
             id_ciudad: Number(this.ciudadInput),

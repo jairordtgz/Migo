@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class RecorridoRealizadoService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/recorridosrealizados/';
+  private baseURL = 'http://localhost:8000/Database/Database/recorridosrealizados/';
   private formato = '?format=json'
   private recorrido !: RecorridoRealizado;
   public recorridosObtenidos: RecorridoRealizado[] = [];

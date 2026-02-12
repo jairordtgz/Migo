@@ -32,7 +32,7 @@ export class DetalleVehiculoPage implements OnInit {
   choferes: Chofer[] = [];
 
   /* ruta para peticiones a las imagenes de vehiculos del server */
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   constructor(
     private modalCtrl: ModalController,

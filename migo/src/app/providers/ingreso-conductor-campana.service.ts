@@ -12,7 +12,7 @@ import * as pdfMake from 'pdfmake/build/pdfmake';
 export class IngresoConductorCampanaService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/ingresoconductorcampana/';
+    'http://localhost:8000/Database/Database/ingresoconductorcampana/';
   private formato = '?format=json';
   public ingresosObtenidos: IngresoConductorCampana[] = [];
 

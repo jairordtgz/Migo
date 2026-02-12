@@ -8,7 +8,7 @@ import { Notificacion } from '../interfaces/notificacion';
 })
 export class NotificacionesService {
 
-  private baseURL = 'https://migoadvs.pythonanywhere.com/Database/Database/notificaciones/';
+  private baseURL = 'http://localhost:8000/Database/Database/notificaciones/';
   private formato = '?format=json'
   private notificacion !: Notificacion;
   public notificacionesObtenidas : Notificacion[] = [];

@@ -10,7 +10,7 @@ import { Empresa } from '../interfaces/empresa';
 })
 export class FormularioAplicacionService {
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/formularioregistrocampana/';
+    'http://localhost:8000/Database/Database/formularioregistrocampana/';
   private formato = '?format=json';
   public formulariosObtenidos?: FormularioAplicacion[];
 

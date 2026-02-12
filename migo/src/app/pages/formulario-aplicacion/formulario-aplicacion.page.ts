@@ -104,7 +104,7 @@ export class FormularioAplicacionPage implements OnInit {
   entidadesFiltradas: string[] = [];
   entidadSeleccionada: string = '';
 
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   //
   puedeRegistrarse: boolean = false;
@@ -209,8 +209,9 @@ export class FormularioAplicacionPage implements OnInit {
 
     const user = this.userService.usuarioActivo();
     const rolUser = user.rol_usuario;
+    console.log('rol user: ', rolUser);
     let id = 0;
-
+    
     switch (rolUser) {
       case 2: //chofer
         const choferActivo = this.choferService.choferActivo();
@@ -304,6 +305,7 @@ export class FormularioAplicacionPage implements OnInit {
   }
 
   enviarFormulario() {
+    console.log("enviando formulario...")
     this.aceptoTerminos();
     this.entidadVacio();
     this.archivoExiste();
@@ -311,7 +313,16 @@ export class FormularioAplicacionPage implements OnInit {
     this.numeroCuentaExiste();
     this.vehiculoHaSidoSeleccionado();
     this.partesSeleccionadas();
-
+    console.log(
+            !this.terminosNoAceptados,
+      !this.archivoVacio,
+      !this.entidadBancariaVacio,
+      !this.tipodeCuentaVacio,
+      !this.numeroCuentaVacio,
+      this.seleccionoVehiculo,
+      this.vehiculoSeleccionado, 
+      this.partesSeleccionada,
+    )
     if (
       !this.terminosNoAceptados &&
       !this.archivoVacio &&

@@ -9,7 +9,7 @@ import { TallerBrandeo } from '../interfaces/taller-brandeo';
 export class TallerBrandeoService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/tallerbrandeos/';
+    'http://localhost:8000/Database/Database/tallerbrandeos/';
   private formato = '?format=json';
   // private user!: User;
   public talleresObtenidos: TallerBrandeo[] = [];

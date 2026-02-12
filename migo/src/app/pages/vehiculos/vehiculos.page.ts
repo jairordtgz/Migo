@@ -34,7 +34,7 @@ export class VehiculosPage implements OnInit {
   esChofer: boolean = false;
 
   /* ruta para peticiones a las imagenes de vehiculos del server */
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   constructor(
     private router: Router,

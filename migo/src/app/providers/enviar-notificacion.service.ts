@@ -7,7 +7,7 @@ import { UsersService } from './users.service';
 })
 export class EnviarNotificacionService {
 
-  baseURL = 'https://migoadvs.pythonanywhere.com/Database/send_fcm_notification/';
+  baseURL = 'http://localhost:8000/Database/send_fcm_notification/';
 
   constructor(
     private http: HttpClient,

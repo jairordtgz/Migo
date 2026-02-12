@@ -36,7 +36,7 @@ import { ToolbarService } from 'src/app/providers/toolbar.service';
 import { UsersService } from 'src/app/providers/users.service';
 import { VehiculoService } from 'src/app/providers/vehiculo.service';
 
-(<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
+(<any>pdfMake).vfs = pdfMake.vfs;
 
 @Component({
   selector: 'app-verificaciones',
@@ -71,7 +71,7 @@ export class VerificacionesPage implements OnInit {
   imgSrc = '';
 
   /* ruta para peticiones a las imagenes de vehiculos del server */
-  imgRuta = 'https://migoadvs.pythonanywhere.com/vehiculos/';
+  imgRuta = 'http://localhost:8000/vehiculos/';
 
   generaQR = false;
   aceptarPlaza = false;

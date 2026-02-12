@@ -16,7 +16,7 @@ export class UsersService {
   // private URLproxy = 'https://cors-anywhere.herokuapp.com/'
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/usuarios/';
+    'http://localhost:8000/Database/Database/usuarios/';
   private formato = '?format=json';
   // private user!: User;
   public usersObtenidos: User[] = [];

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ChoferService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/choferes/';
+    'http://localhost:8000/Database/Database/choferes/';
   private formato = '?format=json';
   public choferesObtenidos : Chofer[] = [];
 

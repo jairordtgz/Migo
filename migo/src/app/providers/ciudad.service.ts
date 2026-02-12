@@ -9,7 +9,7 @@ import { Ciudad } from '../interfaces/ciudad';
 export class CiudadService {
 
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/ciudades/';
+    'http://localhost:8000/Database/Database/ciudades/';
   private formato = '?format=json';
   public ciudadesObtenidas : Ciudad[] = [];
 

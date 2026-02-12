@@ -8,7 +8,7 @@ import { Vehiculo } from '../interfaces/vehiculo';
 })
 export class VehiculoService {
   private baseURL =
-    'https://migoadvs.pythonanywhere.com/Database/Database/vehiculos/';
+    'http://localhost:8000/Database/Database/vehiculos/';
   private formato = '?format=json';
   private vehiculo!: Vehiculo;
   public vehiculosObtenidos: Vehiculo[] = [];
